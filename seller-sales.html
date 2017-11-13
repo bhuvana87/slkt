@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top">
+				
+								<a href="#" class="dropdown-toggle drpdwn-link" data-toggle="dropdown"><span class="fa fa-th"></span> Browse Events</a> 
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+	
+	</nav>  	 	
+<!-- ./Navbar -->
+	<div class="main-container">
+
+	   <section id="main-content">
+	   <div class="row">
+	   <div class="col-md-2">
+	   	<aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   </div>
+	   <div class="col-md-10">
+	    <section class="wrapper">
+          	<div class="seller-sales">
+			<div class="refine">
+			
+			<div class="row">
+			<div class="col-md-7">
+			<h3><i class="fa fa-line-chart"></i> My Sales</h3>
+			</div>
+			<div class="col-md-5 text-right">
+			
+			<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Sales Alerts (4)</option>
+    <option>Shipment / Upload Pending Past Sales (50)</option>
+    <option>Archived (50)</option>
+</select>
+  <!-- Dropdown Structure -->
+
+			</div>
+</div>
+</div>
+<div class="seller-sales-list">
+ <div id="no-more-tables">
+  <table class="col-md-12 table-bordered table-striped table-condensed cf">
+  	<thead class="cf">
+        			<tr>
+					<th>ID</th>
+					<th>Date</th>
+        				<th>Event</th>
+						
+        				<th>Seating</th>
+        				<th class="text-center">Tickets</th>
+        				<th>Status</th>
+						<th>Price</th>
+        			</tr>
+        		</thead>
+					<tbody>
+        			<tr>
+        				<td data-title="ID"><span class="id">ID#1234</span></td>
+						<td data-title="date">
+						<div class="table-date">
+						22 Jul
+			<span>Fri 7:00 PM</span>
+			</div></td>
+        				<td data-title="Event">
+						<div class="table-event">
+						Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV<span>
+			</div>
+			</td>
+        				<td data-title="Seating" >
+						<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+						</td>
+        				<td data-title="Tickets" class="text-center table-tkts">
+						<div class="text-center"><div class="count">4</div></div>
+						</td>
+        				<td data-title="Status"><span class="status pending">Pending <i class="fa fa-info-circle"></i></span></td>
+        				<td data-title="Price"><span class="price">$190</span></td>
+        				
+        			</tr>
+					<tr>
+        				<td data-title="ID"><span class="id">ID#1234</span></td>
+						<td data-title="date">
+						<div class="table-date">
+						22 Jul
+			<span>Fri 7:00 PM</span>
+			</div></td>
+        				<td data-title="Event">
+						<div class="table-event">
+						Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV<span>
+			</div>
+			</td>
+        				<td data-title="Seating" >
+						<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+						</td>
+        				<td data-title="Tickets" class="text-center table-tkts">
+						<div class="text-center"><div class="count">4</div></div>
+						</td>
+        				<td data-title="Status"><span class="status pending-blue">Shipping Pending <i class="fa fa-info-circle"></i> <i>(Due by 10/10/2015)</i></span></td>
+        				<td data-title="Price"><span class="price">$190</span></td>
+        				
+        			</tr>
+					<tr>
+        				<td data-title="ID"><span class="id">ID#1234</span></td>
+						<td data-title="date">
+						<div class="table-date">
+						22 Jul
+			<span>Fri 7:00 PM</span>
+			</div></td>
+        				<td data-title="Event">
+						<div class="table-event">
+						Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV<span>
+			</div>
+			</td>
+        				<td data-title="Seating" >
+						<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+						</td>
+        				<td data-title="Tickets" class="text-center table-tkts">
+						<div class="text-center"><div class="count">4</div></div>
+						</td>
+        			<td data-title="Status"><span class="status upload">Upload Ticket <i class="fa fa-upload"></i>
+						<i>(Due by 10/10/2015)</i>
+						</span></td>
+        				<td data-title="Price"><span class="price">$190</span></td>
+        				
+        			</tr>
+					<tr>
+        				<td data-title="ID"><span class="id">ID#1234</span></td>
+						<td data-title="date">
+						<div class="table-date">
+						22 Jul
+			<span>Fri 7:00 PM</span>
+			</div></td>
+        				<td data-title="Event">
+						<div class="table-event">
+						Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV<span>
+			</div>
+			</td>
+        				<td data-title="Seating" >
+						<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+						</td>
+        				<td data-title="Tickets" class="text-center table-tkts">
+						<div class="text-center"><div class="count">4</div></div>
+						</td>
+        					<td data-title="Status"><span class="status pending">Pending <i class="fa fa-info-circle"></i></span></td>
+        				<td data-title="Price"><span class="price">$190</span></td>
+        				
+        			</tr>
+					<tr>
+        				<td data-title="ID"><span class="id">ID#1234</span></td>
+						<td data-title="date">
+						<div class="table-date">
+						22 Jul
+			<span>Fri 7:00 PM</span>
+			</div></td>
+        				<td data-title="Event">
+						<div class="table-event">
+						Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV<span>
+			</div>
+			</td>
+        				<td data-title="Seating" >
+						<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+						</td>
+        				<td data-title="Tickets" class="text-center table-tkts">
+						<div class="text-center"><div class="count">4</div></div>
+						</td>
+        					<td data-title="Status"><span class="status pending">Pending <i class="fa fa-info-circle"></i></span></td>
+        				<td data-title="Price"><span class="price">$190</span></td>
+        				
+        			</tr>
+					
+					</tbody>
+  </table>
+ </div>
+</div><br>
+			</div>
+			
+			</div>
+		
+		</section><!-- /wrapper -->
+	   </div>
+	   </div>
+         
+      </section>
+	</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+</body>
+</html>

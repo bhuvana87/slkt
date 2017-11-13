@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</nav>  	 		 		
+<!-- ./Navbar -->
+
+	<div class="main-container">
+	 <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper container">
+          	
+			<div class="seller-settings">
+			
+			<h3><i class="fa fa-gear"></i> Settings</h3>
+
+
+ <div class="settings-det form-cont">
+			   
+			
+		<div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#bulkupload">
+					<i class="fa fa-upload"></i>  Bulk Upload
+					</a>
+                </h4>
+            </div>
+            <div id="bulkupload" class="panel-collapse collapse in">
+                <div class="panel-body">
+               
+
+						<p>Easily Sync your inventory with Slicket using our super easy Dropbox cloud solution or by uploading a csv file from your local computer.
+				 <p>For a sample csv file <a href="#">click here</a>. By accepting the <a href="#terms" data-toggle="modal">terms and conditions</a>, the bulk upload options will become active. 
+                        </p>
+						<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> I accept the Terms and Conditions
+                        </label>
+				<h5>Upload a File</h5>
+				<div class="upload-grid">
+				 <div class="row">
+				 
+				 <div class="col-md-4">
+				 
+				
+				 <a href="#" class="btn btn-primary btn-blue disabled" ><i class="fa fa-dropbox"></i> Connect to Dropbox</a>
+				 
+				 </div>
+				
+				 <div class="col-md-1 text-center">
+				 <span class="or-txt">(or)</span>
+				 </div>
+				  <div class="col-md-5">
+				 <label class="field prepend-icon file">
+                            <span class="button btn btn-primary btn-blue disabled"> Choose File </span>
+                <input type="file" class="gui-file" name="file1" id="file1" onChange="document.getElementById('uploader1').value = this.value;">
+                            <input type="text" class="gui-input" id="uploader1" placeholder="no file selected" readonly>
+                            <label class="field-icon"><i class="fa fa-upload"></i></label>
+                        </label>
+						
+				 </div>
+				 </div>
+				 
+				 <br><br>
+				 <div class="row">
+			
+				 
+				 <div class="col-md-4">
+				 <a href="#" class="btn btn-primary btn-blue"><i class="fa fa-dropbox"></i>Connected to Dropbox - Sync Now</a>
+				 <span class="small-txt"><a href="">Choose upload a file instead</a></span>
+				 </div>
+				
+				 <div class="col-md-1 text-center">
+				 <span class="or-txt">(or)</span>
+				 </div>
+				  <div class="col-md-5">
+				 <label class="field prepend-icon file">
+                            <span class="button btn btn-primary btn-blue disabled"> Choose File </span>
+                <input type="file" class="gui-file" name="file1" id="file1" onChange="document.getElementById('uploader1').value = this.value;">
+                            <input type="text" class="gui-input" id="uploader1" placeholder="no file selected" readonly>
+                            <label class="field-icon"><i class="fa fa-upload"></i></label>
+                        </label>
+						<span class="small-txt">Choose Dropbox instead</span>
+				 </div>
+				 </div>
+                </div>
+            </div>
+        </div>
+		</div>
+       
+        <!--<div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#address"><i class="fa fa-map-marker"></i> Manage Shipping Address</a>
+                </h4>
+            </div>
+            <div id="address" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+				  <div class="col-md-6">
+				  <h4>Billing Address</h4>
+				  <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="Address">
+                                </label>
+                            </div>
+							 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from" class="gui-input" placeholder="Apartment, Building, Suite (Optional)">
+                                </label>
+                            </div>
+							 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="City">
+                                </label>
+                            </div>
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="State">
+                                </label>
+                            </div>
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="Zip">
+                                </label>
+                            </div>
+					
+							
+				  </div>
+				  <div class="col-md-6">
+				   <h4 class="inline-head">Shipping Address </h4><label class="option block spacer-t10">
+                                    <input type="checkbox" name="mobileos" value="CH">
+                                    <span class="checkbox"></span> Same as Billing Address       
+                                </label>
+				  <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="Address">
+                                </label>
+                            </div>
+							 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from" class="gui-input" placeholder="Apartment, Building, Suite (Optional)">
+                                </label>
+                            </div>
+							 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="City">
+                                </label>
+                            </div>
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="State">
+                                </label>
+                            </div>
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="from"  class="gui-input" placeholder="Zip">
+                                </label>
+                            </div>
+				  </div>
+				  </div>
+                </div>
+            </div>
+        </div>-->
+		  <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#payment"><i class="fa fa-money"></i> Payment Methods</a>
+                </h4>
+            </div>
+            <div id="payment" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="row">
+				  <div class="col-md-5">
+				  <div class="section">
+                                <label class="field append-icon">
+                                    <input type="text" name="cardnumber" id="cardnumber" class="gui-input" placeholder="Card Number">
+                                    <label for="cardnumber" class="field-icon"><i class="fa fa-credit-card"></i></label>  
+                                </label>
+                            </div>
+							<div class="row">
+							<div class="col-md-12">
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="expirationdate" id="expirationdate" class="gui-input" placeholder="MM / YYYY">
+                                  
+                                </label>
+                            </div>
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="cvcode" id="cvcode" class="gui-input" placeholder="CV Code">
+                                  
+                                </label>
+                            </div>
+							</div>
+							<div class="col-md-4">
+														
+							</div>
+							</div>
+								   <div class="section">
+                                <label class="field">
+                                    <input type="text" name="username" id="username" class="gui-input" placeholder="User Name">
+                                   
+                                </label>
+                            </div>
+						<br>
+						 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="address" id="address" class="gui-input" placeholder="Address">
+                                   
+                                </label>
+                            </div>
+							 <div class="section">
+                                <label class="field">
+                                    <input type="text" name="building" id="building" class="gui-input" placeholder="Apartment, Building, Suite (Optional)">
+                                   
+                                </label>
+                            </div>
+							<div class="section">
+                                <label class="field">
+                                    <input type="text" name="city" id="city" class="gui-input" placeholder="City">
+                                   
+                                </label>
+                            </div>
+							<div class="row">
+							<div class="col-md-12">
+							 <div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="state" id="state" class="gui-input" placeholder="State">
+                                   
+                                </label>
+                            </div>
+							<div class="section inline">
+                                <label class="field">
+                                    <input type="text" name="Zipcode" id="Zipcode" class="gui-input" placeholder="Zipcode">
+                                  
+                                </label>
+                            </div>
+							</div>
+								
+							</div>
+				  </div>
+				  <div class="col-md-7">
+				  <div class="paypal-panel">
+				  <p><a href="">abc@paypal</a></p>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor </p>
+				  </div>
+				  <br>
+				  <a href="#"><span class="glyphicon glyphicon-plus"></span> Add Different Payment Info </a>
+				  </div>
+				  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="text-right">
+<a href="#" class="button btn-border btn-blue">
+Save Details
+</a>
+</div>
+</div>
+			</div>
+		
+			
+		</section>
+      </section>
+	</div>
+	
+	
+	<div id="terms" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content ">
+      <div class="modal-header blue-bg">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Terms and Conditions</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+ 
+
+</body>
+</html>

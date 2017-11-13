@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet"> 
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</nav>  	 		 		
+<!-- ./Navbar -->
+	<div class="main-container">
+	 <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper container full-width">
+		  
+          	<div class="row">
+			<div class="col-md-8">
+  		<div class="venue-map">
+  		<div class="event-title">
+		<div class="row">
+			<div class="col-xs-10">
+			<div class="event-item-date">
+			<a href="seller-map.html" id="back-link" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Back to My Listing" data-original-title="" title=""><i class="fa fa-chevron-left"></i></a>
+			<div class="event-date">
+			22 Jul
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV</span></div>
+			</div>
+			</div>
+			<div class="col-xs-2 text-right">
+			<a href="#" data-target="#filters" data-toggle="modal" class="filter-icn  filter-hidden" title="Filters"><i class="fa fa-filter"></i></a>
+			</div>
+			</div>
+  		</div>
+	<div class="stadium-map">
+
+		<div id="navigationMenu">
+<div class="list-item btn-disabled">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">Reset</a>
+
+</div>
+</div>
+</div>
+
+<div class="list-item">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">
+<i class="fa fa-plus"></i>
+<i class="fa fa-minus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>2</strong>Tickets
+</div>
+ <div class="list-links link-tkts">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="1">1</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="2">2</a>
+    					<a class="btn btn-primary btn-sm  active" data-toggle="list-tkt" data-title="3">3</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="4">4</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="5">5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="6">6</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="7">7</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="8">8</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="8+">8+</a>
+						
+    				</div>
+    				<input type="hidden" name="list-tkt" id="list-tkt">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>1*</strong>Section
+</div>
+ <div class="list-links link-sec">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+						<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="Any">Any</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="1*">1*</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="2*">2*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="3*">3*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="4*">4*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="5*">5*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="6*">6*</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="list-sec" data-title="7*">7*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="8*">8*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="9*">9*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="10*">10*</a>
+    				</div>
+    				<input type="hidden" name="list-sec" id="list-sec">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>1-5</strong>Rows
+</div>
+ <div class="list-links link-rows">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm active" data-toggle="list-rows" data-title="1-5">1-5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="5-10">5-10</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="10-15">10-15</a>
+    				
+    				</div>
+    				<input type="hidden" name="list-rows" id="list-rows">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>Instant</strong>Ticket
+</div>
+ <div class="list-links">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					 <a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Instant">Instant</a>
+						<a class="btn btn-primary btn-sm active" data-toggle="list-tktyp" data-title="E-Ticket">E-Ticket</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Physical">Physical</a>
+    					
+    				
+    				</div>
+    				<input type="hidden" name="list-tktyp" id="list-tktyp">
+    			</div>
+ </div>
+</div>
+</div>
+<!--<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>E-</strong>Tickets
+</div>
+ <div class="list-links">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="list-etkt" data-title="E-Ticket">Yes</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-etkt" data-title="Instant">No</a>
+    </div>
+    				<input type="hidden" name="list-etkt" id="list-etkt">
+    			</div>
+ </div>
+</div>
+</div>-->
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>$200</strong><strong>- 300</strong> Pricing
+</div>
+ <div class="list-links price-range">
+	 <div class="form-cont wrap-2 slider-topspace">
+	 <div class="section">
+                               	
+                            <div class="slider-wrapper blue-slider">
+                                <div id="slider-range2"></div>  
+                            </div>
+                        </div>
+						</div>
+						</div>
+
+</div>
+</div>
+<div class="list-item btn-enabled">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">Filter</a>
+
+</div>
+</div>
+</div>
+</div> </div>
+			   <div class="text-center"><img src="images/map.jpg" alt="Venue Map"></div>
+			   
+			</div>
+			</div>
+			<div class="col-md-4 no-padding bg-grey1">
+			<div id="left">
+				<a href="seller-map.html" class="back-results"><i class="fa fa-angle-left"></i> Back to Results</a>
+				<div class="event-tkt-buy">
+			<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-6 no-padding-right">
+	<div class="negotiate text-center">
+			<a href="#"><i class="minus-icn">-</i></a> <span>$190 / ea</span> <a href="#"><i class="plus-icn">+</i></a>
+			<a href="#" class="btn btn-small btn-blue">Negotiate</a>
+			</div>
+			
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-6">
+				<div class="buynow">
+			<span>$200 / ea</span> 
+			<a href="#" class="btn btn-small btn-green">Buy Now</a>
+			</div>
+			</div>
+			</div>
+			</div>
+				<div id="inner">
+				<div class="event-item-content">
+			
+			
+			<div class="event-item-img">
+			<img src="images/event-img.jpg" alt="Event Name">
+			</div>
+		
+
+			
+			<div class="ticket-details">
+			<div class="row">
+			<div class="col-sm-6 col-xs-5">
+			<span>Seating</span>
+			</div>
+			<div class="col-sm-6 col-xs-7">
+			Section 115, Row 20
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-6 col-xs-5">
+		<span>Number of Tickets</span>
+			</div>
+			<div class="col-sm-6 col-xs-7">
+			<div class="inline-drpdwn">
+			<select class="selectpicker" style="display: none;">
+    <option>1</option>
+    <option selected="">2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-6 col-xs-5">
+			<span>Ticket Type</span>
+			</div>
+			<div class="col-sm-6 col-xs-7">
+			E-Ticket
+			</div>
+			</div>
+            <div class="row">
+			<div class="col-sm-6 col-xs-5">
+			<span>Shipping Date</span>
+			</div>
+			<div class="col-sm-6 col-xs-7">
+			02.10.2016
+			</div>
+			</div>
+			</div>
+		
+				<div class="input-group event-icons">
+    				<div id="radioBtn" class="btn-group">
+    					
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="event-icns" data-title="Aisle Tickets"><i class="fa fa-ticket"></i>Aisle Tickets</a>
+    					
+    					<a class="btn btn-primary btn-sm active" data-toggle="event-icns" data-title="Alcohol Free"><i class="fa fa-glass"></i>
+Alcohol Free</a>
+<a class="btn btn-primary btn-sm notActive" data-toggle="event-icns" data-title="wheelchair"><i class="fa fa-wheelchair"></i>Wheelchair</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="event-icns" data-title="sidestage"><i class="fa fa-ticket"></i>Side stage</a>
+    					
+    				
+    				</div>
+    				
+    				<input type="hidden" name="list-tkt" id="list-tkt">
+    			</div>
+			<div class="event-note">
+			<p><b>Notes:</b> Includes additional items...Includes additional items...Includes additional items...Includes additional items...Includes additional items...Includes additional items...</p>
+			</div>
+				</div>
+				</div>
+			</div>
+			
+			</div/>
+			</div>
+			</div>
+  		</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+		<div id="filters" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+ <div class="modal-header grey-bg">
+ <h3 class="text-center modal-title">Refine Tickets</h3>
+ </div>
+      <div class="modal-body">
+	  
+		<h5 for="tickets" class="black-txt">Tickets</h5>
+		<div class="input-group">
+    				<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="1">1</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="2">2</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="tickets" data-title="3">3</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="4">4</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="5">5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="6">6</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="7">7</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="8">8</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="8+">8+</a>
+    				</div>
+    				<input type="hidden" name="tickets" id="tickets" value="3">
+    			</div>
+    				
+    		</div><br>
+    		<h5 for="section" class="black-txt">Section</h5>
+    			<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="1*">1*</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="2*">2*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="3*">3*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="4*">4*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="5*">5*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="6*">6*</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="section" data-title="7*">7*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="8*">8*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="9*">9*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="10*">10*</a>
+    				</div>
+    				<input type="hidden" name="section" id="section">
+    			</div>
+	  
+	  <br>
+	    		<h5 for="rows" class="black-txt">Rows</h5>
+    		
+    					<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm active" data-toggle="rows" data-title="1-5">1-5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="5-10">5-10</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="10-15">10-15</a>
+    				
+    				</div>
+    				<input type="hidden" name="fun" id="fun">
+    			</div>
+                       
+    				
+    			 <br>
+	    		<h5 for="tkt-type" class="black-txt">Ticket Type</h5>
+    		
+    					<div class="input-group">
+    			<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="tkt-type" data-title="E-Ticket">E-Ticket</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="tkt-type" data-title="Instant">Instant</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tkt-type" data-title="Physical">Physical</a>
+    					
+    				
+    				</div>
+    				<input type="hidden" name="tkt-type" id="tkt-type">
+    			</div>
+                       
+    				
+	  <br>
+    		
+		<div class="price-range">
+		
+	 <div class="form-cont  wrap-2">
+       
+                <h5 class="black-txt"><label for="amountx">Price Range</label>  <input type="text" id="amountx" class="slider-input"></h5>
+                 <br>
+				 <div class="section">
+                           <!-- end .spacer -->            	
+                            <div class="slider-wrapper blue-slider">
+                                <div id="slider-range3"></div>  
+                            </div><!-- end .slider-wrapper -->
+                        </div><!-- end section -->
+             <!-- end .form-body section -->
+         
+            
+        </div>
+		</div>
+	<br>
+		<div class="text-center">
+		<a href="#" class="button btn btn-blue inline-block-level" data-dismiss="modal">Refine</a>
+		</div>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+		
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+// JavaScript Document
+$(document).ready(function($) {
+		//Menu animation						
+		$('#navList ul').css({display: "none"}); //Fix Opera
+  		
+		$('#navList li').hover(function() {  
+		$(this).find('a').stop().animate({'width' : "90"});
+   		$(this).find('ul:first').css({visibility : "visible", display : "none"}).show(400);
+    
+  		}, function() {
+    		$(this).find('ul:first').css({visibility : "hidden"}).hide(400);
+   			$(this).find('a').stop().animate({'width' : "80"});
+			});
+		});
+</script>
+<script type="text/javascript">
+	
+		$(function() {
+		
+			
+				
+				$("#amount").val( 
+					"$" + $("#slider2").slider("value") 
+				);
+				
+		
+		
+            var valtooltip = function(sliderObj, ui){
+                val1            = '<span class="slider-tip">'+ sliderObj.slider("values", 0) +'</span>';
+                val2            = '<span class="slider-tip">'+ sliderObj.slider("values", 1) +'</span>';
+                sliderObj.find('.ui-slider-handle:first').html(val1);
+                sliderObj.find('.ui-slider-handle:last').html(val2);		                 
+            };
+
+            $( "#slider-range2" ).slider({
+              range: true,
+              min: 0,
+              max: 500,
+              values: [180, 400],              
+			  create:function(event,ui){
+					valtooltip($(this),ui);                    
+              },
+              slide: function( event, ui ) {
+					valtooltip($(this),ui);
+					$( "#amountx" ).val("$" + ui.values[0] + " - $" + ui.values[1]); 
+              }, 
+              stop:function(event,ui){
+					valtooltip($(this),ui);             
+              }			               
+
+            });
+			
+			$( "#amountx" ).val("$" + $("#slider-range2").slider("values", 0) + " - $" + $("#slider-range2").slider("values", 1));
+			
+			var initialSpark = 60;
+			var sparkTooltip = function(event, ui) {
+				var curSpark = ui.value  || initialSpark
+				var sparktip = '<span class="slider-tip">' + curSpark + '</span>';
+				$(this).find('.ui-slider-handle').html(sparktip);
+			}			
+			
+			
+		});				
+    
+    </script>
+	<script type="text/javascript">
+	
+		$(function() {
+		
+			
+				
+				$("#amount").val( 
+					"$" + $("#slider3").slider("value") 
+				);
+				
+		
+		
+            var valtooltip = function(sliderObj, ui){
+                val1            = '<span class="slider-tip">'+ sliderObj.slider("values", 0) +'</span>';
+                val2            = '<span class="slider-tip">'+ sliderObj.slider("values", 1) +'</span>';
+                sliderObj.find('.ui-slider-handle:first').html(val1);
+                sliderObj.find('.ui-slider-handle:last').html(val2);		                 
+            };
+
+            $( "#slider-range3" ).slider({
+              range: true,
+              min: 0,
+              max: 500,
+              values: [180, 400],              
+			  create:function(event,ui){
+					valtooltip($(this),ui);                    
+              },
+              slide: function( event, ui ) {
+					valtooltip($(this),ui);
+					$( "#amountx" ).val("$" + ui.values[0] + " - $" + ui.values[1]); 
+              }, 
+              stop:function(event,ui){
+					valtooltip($(this),ui);             
+              }			               
+
+            });
+			
+			$( "#amountx" ).val("$" + $("#slider-range3").slider("values", 0) + " - $" + $("#slider-range2").slider("values", 1));
+			
+			var initialSpark = 60;
+			var sparkTooltip = function(event, ui) {
+				var curSpark = ui.value  || initialSpark
+				var sparktip = '<span class="slider-tip">' + curSpark + '</span>';
+				$(this).find('.ui-slider-handle').html(sparktip);
+			}			
+			
+			
+		});				
+    $('#radioBtn a').on('click', function(){
+    var sel = $(this).data('title');
+    var tog = $(this).data('toggle');
+    $('#'+tog).prop('value', sel);
+    
+    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+})
+    </script>
+	<script>
+window.onload = window.onresize = function () {
+    var left = document.getElementById("left");
+    var height = window.innerHeight;
+    left.style.height = height-50 + "px";
+}
+
+</script>
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+
+	
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+	</nav>  	 			
+<!-- /.Navbar -->
+	<div class="main-container">
+	<aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper">
+          	<div class="">
+			<div class="seller-home">
+			<div class="inner-banner tickets">
+<div class="banner-overlay">
+<div class="container inner-banner-cont ">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+<div class="total-results">
+<div class="tot-results-txt">
+<strong>12</strong>
+<span>Category / Team / Venue Name<br>Results &nbsp;<small>(120 Tickets)</small></span>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="soc-share">
+<div class="soc-share-links text-right">
+
+<a href="#" title="Favourite" ><i class="fa fa-heart"></i></a> <a href="#" title="Share with Facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="Share with Twitter"><i class="fa fa-twitter"></i></a> 
+</div>
+</div>
+</div>	
+</div>
+</div>
+
+</div>
+</div>
+			<section class="wrapper wrapper-content container">
+		<div class="row">
+  		<div class="col-md-8">
+  				
+			<div class="event-listings">
+			<div class="event-listings-head">
+			<div class="row">
+			<div class="col-md-9">
+			<h2><strong>Searching for</strong> <small>NewYork Knicks, <a href=""><i class="fa fa-map-marker"></i> Florida</a></small></h2>
+			</div>
+			<div class="col-md-3">
+			<select class="selectpicker">
+    <option>By Venue</option>
+    <option>By Event</option>
+</select>
+			</div>
+			</div>
+			</div>
+			<div class="event-listings-cont">
+			
+			<div class="panel-group" id="accordion">
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+			
+<div class="event-list-item">
+<div class="row">
+<div class="col-md-7 col-sm-7 col-xs-12">
+<div class="event-item-date">
+			
+			<div class="event-date">
+			22 <strong>Jul</strong>
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			<a href="seller-map.html">Event Name Goes Here...</a><a href="#"><small><i class="fa fa-comments"></i> 2 Negotiations</small></a>
+			<span><a href="#">Mandalay Bay Event Center, Las Vegas, NV</a></span></div>
+			</div>
+</div>
+
+<div class="col-md-2 col-sm-2 col-xs-6">
+
+<div class="tkt-count"><a href="#" class="fav-icn active" title="Favourite"><i class="fa fa-heart"></i></a></div>
+<div class="tkt-count" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" title="Listed Tickets">
+<i class="fa fa-ticket"></i> 4 
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-6 text-right"><a class="button btn-border" href="seller-map.html">Buy</a> <a class="button btn-border" href="seller-sell-options.html">Sell</a>
+</div>
+</div>
+</div>
+
+
+            
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+				<div>
+      <div class="tkt-list-item">
+							<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1">
+							<span class="count">1</span>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-1">	
+<div class="tktcount-no">							
+2 <i>Tickets</i>
+</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="tkt-price">
+							$180 - $200
+							</div>
+							</div>
+								<div class="col-md-2 col-sm-2 col-xs-1">
+								<div class="tkt-links pull-right">
+							 		<div class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
+  <ul class="dropdown-menu">
+   	<li><a href="seller-sell-options.html"><i class="fa fa-eye"></i> View</a></li> 
+    <li><a href="seller-sell-options.html"><i class="fa fa-pencil"></i> Edit</a></li>
+    <li><a href="seller-sell-options.html"><i class="fa fa-trash-o"></i> Delete</a></li>
+
+  </ul>
+</div>
+							 </div>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+							<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1">
+							<span class="count">1</span>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-1">	
+<div class="tktcount-no">							
+2 <i>Tickets</i>
+</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="tkt-price">
+							$180 - $200
+							</div>
+							</div>
+								<div class="col-md-2 col-sm-2 col-xs-1">
+								<div class="tkt-links pull-right">
+							 		<div class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
+  <ul class="dropdown-menu">
+   	<li><a href="seller-sell-options.html"><i class="fa fa-eye"></i> View</a></li> 
+    <li><a href="seller-sell-options.html"><i class="fa fa-pencil"></i> Edit</a></li>
+    <li><a href="seller-sell-options.html"><i class="fa fa-trash-o"></i> Delete</a></li>
+
+  </ul>
+</div>
+							 </div>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+							<div class="row">
+							<div class="col-md-1 col-sm-1 col-xs-1">
+							<span class="count">1</span>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="seating-det">
+							Section 110
+							<span>Row 2</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-1">	
+<div class="tktcount-no">							
+2 <i>Tickets</i>
+</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-4">
+							<div class="tkt-price">
+							$180 - $200
+							</div>
+							</div>
+								<div class="col-md-2 col-sm-2 col-xs-1">
+								<div class="tkt-links pull-right">
+							 		<div class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-option-vertical"></span></a>
+  <ul class="dropdown-menu">
+   	<li><a href="seller-sell-options.html"><i class="fa fa-eye"></i> View</a></li> 
+    <li><a href="seller-sell-options.html"><i class="fa fa-pencil"></i> Edit</a></li>
+    <li><a href="seller-sell-options.html"><i class="fa fa-trash-o"></i> Delete</a></li>
+
+  </ul>
+</div>
+							 </div>
+							</div>
+							</div>
+							</div>
+            </div>
+			
+        </div>
+		</div>
+		</div>
+		
+		<!-- Accordion panel End -->
+		
+		 <div class="panel panel-default">
+            <div class="panel-heading">
+			
+<div class="event-list-item">
+<div class="row">
+<div class="col-md-7 col-sm-7 col-xs-12">
+<div class="event-item-date">
+			
+			<div class="event-date">
+			22 <strong>Jul</strong>
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			<a href="seller-map.html">Event Name Goes Here...</a><a href="#"><small><i class="fa fa-comments"></i> 2 Negotiations</small></a>
+			<span><a href="#">Mandalay Bay Event Center, Las Vegas, NV</a></span></div>
+			</div>
+</div>
+
+<div class="col-md-2 col-sm-2 col-xs-6">
+
+<div class="tkt-count"><a href="#" class="fav-icn active" title="Favourite"><i class="fa fa-heart"></i></a></div>
+
+</div>
+<div class="col-md-3 col-sm-3 col-xs-6 text-right"><a class="button btn-border" href="seller-map.html">Buy</a> <a class="button btn-border" href="seller-sell-options.html">Sell</a>
+</div>
+</div>
+</div>
+
+            
+            </div>
+            
+		</div>
+       <div class="load-more-panel text-center">
+	   <a href="#" class="button btn-grey inline-block-level">Load More</a>
+	   </div>
+			</div>
+			</div>
+		
+			</div></div>
+			<div class="col-md-4 ">
+		<div class="grey-panel">
+<div class="media-photos">
+<h5>Photos From Social Media</h5>
+<div class="gallery">
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal1" data-toggle="modal" class="image-link"><img src="images/1.jpg" alt=""></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal1" data-toggle="modal" class="image-link"><img src="images/1.jpg" alt=""></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal2" data-toggle="modal" class="image-link"><img src="images/11.jpg" alt=""></a>
+</div>
+
+
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal1" data-toggle="modal" class="image-link"><img src="images/1.jpg" alt=""></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal1" data-toggle="modal" class="image-link"><img src="images/1.jpg" alt=""></a>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-6">
+<a href="#image-modal2" data-toggle="modal" class="image-link"><img src="images/11.jpg" alt=""></a>
+</div>
+</div>
+</div>
+</div>
+<div class="about-events">
+<h5>About WWE Event</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet sapien eu lectus euismod, ac sagittis diam accumsan. Curabitur rutrum turpis tempus mi pulvinar eleifend. Mauris vel tincidunt mauris. Mauris a tincidunt massa. </p>
+<p>Duis malesuada elit laoreet nibh tincidunt volutpat eget non lorem. Integer luctus velit quis felis egestas, vitae posuere elit tempor. </p>
+</div>
+</div>
+		</div>
+		</div>
+	
+			
+			</div>
+</div>
+			<footer class="footer">
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="widget widget-about">
+                                    <h4 class="footer-title">About <strong>Slicket</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum dui a magna viverra dictum. Pellentesque habitant morbi. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+                                    <address>
+                                        <div><i class="fa fa-phone"></i>123 456 7890</div>
+                                        <div><i class="fa fa-envelope"></i> <a href="mailto:info@example.com">info@slicket.com</a></div>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Want to Know</h4>
+                                    <ul>
+                                        <li><a href="#">What is Slicket</a></li>
+										<li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Our Guarantee</a></li>
+                                        <li><a href="#">User Agreement</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Broker Registration</a></li>
+                                     <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+							    <div class="col-md-2 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Useful Links</h4>
+									
+                                    <ul>
+                                        <li><a href="#">About Slicket</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">In News</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">Term of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-twitter">
+                                    <h4 class="footer-title">Recent Tweets</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">@slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">@Slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                    </ul>
+                                </div><br>
+                            </div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+              <div class="footer-info">
+			  <div class="container text-center">
+			  &copy; 2015 Slicket. All rights reserved.
+			  </div>
+			  </div>
+            </footer>
+			</div>
+		
+		</section>
+      </section>
+	</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+</body>
+</html>

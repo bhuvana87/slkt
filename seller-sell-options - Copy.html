@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		<!-- /.container-fluid -->
+	</nav>  	 		 		
+
+	<div class="main-container">
+	 <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper container">
+		  
+          	<div class="row">
+			<div class="col-md-8 main-content form-cont brdr-right">
+		
+			<div class="venue-map">
+				<div class="event-item-date">
+			<a href="seller-events.html" id="back-link" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Back to My Listing" data-original-title="" title=""><i class="fa fa-chevron-left"></i></a>
+			<div class="event-date">
+			22 Jul
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV</span></div>
+			<hr>
+			</div>
+				<div class="seller-form">
+<div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><h4 class="panel-title">
+                    <i class="fa fa-ticket"></i> Enter Ticket Details
+                </h4></a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+				<div class="row">
+				<div class="col-md-7 col-sm-6">
+				<div class="preferred-seating-cont">
+	 <div class="row">
+	 <div class="col-md-6">
+	
+	 <label>Section</label>
+	 <select class="selectpicker">
+	 <option>Section 11</option>
+	 <option>Section 13</option>
+	 <option>Section 16</option>
+	 <option>Section 19</option>
+	 </select>
+	 </div>
+	  <div class="col-md-6">
+	  <label>Rows</label>
+	 <select class="selectpicker">
+	 <option>Row 2</option>
+	 <option>Row 5</option>
+	 <option>Row 8</option>
+	 <option>Row 9</option>
+	 </select>
+	 </div>
+
+	 </div>
+<div class="row">
+	  <div class="col-md-6">
+	  <label>Number of Tickets</label>
+	 <select class="selectpicker">
+	 <option>1</option>
+	 <option>2</option>
+	 <option>3</option>
+	 <option>4</option>
+	 <option>5</option>
+	 <option>6</option>
+	 <option selected>7</option>
+	 <option>8</option>
+	  <option>9</option>
+	 <option>10</option>
+	  <option>10+</option>
+	 </select>
+	 </div>
+	 <div class="col-md-6">
+	 <div class="seat-nos">
+	 <label>Seats (optional) <a href="#" id="help-seats" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Make sure pdf pages corresponds to the seats in the same order" data-original-title="" title="" class="helplink"><i class="fa fa-question-circle"></i></a></label>
+		<div class="row">
+		<div class="col-md-6 col-xs-6 no-padding-right">
+		<label class="field">
+                            	<input type="text" name="start" class="gui-input" placeholder="Start">
+                                
+                            </label>
+		</div>
+		<div class="col-md-6 col-xs-6 pl3">
+		<label class="field">
+                            	<input type="text" name="start" class="gui-input" placeholder="End">
+                                
+                            </label>
+		</div>
+		</div>
+			
+  	</div>
+	 </div>
+</div>
+<div class="row">
+ <div class="col-md-12">
+	 <div class="splits">
+		
+			
+			<label class="pull-left">Splits <a href="#" id="help-splits" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="You can Sell tickets together or sell in multiples of... " data-original-title="" title="" class="helplink"><i class="fa fa-question-circle"></i></a></label><label class="field option">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> Dont Leave me with a single ticket
+                        </label>
+			
+			
+			<div class="splits-item">
+			<a href="#">1</a><a href="#">2</a><a href="#" class="active">3</a><a href="#">5</a><a href="#" class="active">7</a>
+			</div>
+  	</div>
+	 </div>
+	<!-- <div class="col-md-6 no-padding-left">
+	 <div class="text-left"><br>
+	<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> Dont Leave me with a single ticket
+                        </label>
+		
+</div>
+	 </div>-->
+</div>
+
+			</div>
+				</div>
+			<div class="col-md-5">
+			<div class="delivery">
+	<h4>Delivery Method</h4>
+	
+	 <select class="selectpicker">
+	 
+	 <option>Instant Download</option>
+	 <option>E-Ticket</option>
+	 <option>Physical Ticket</option>
+	 </select>
+	 	  <label>Upload your E-ticket</label>
+<label class="field prepend-icon file">
+                            <span class="button btn-border"> Choose File </span>
+                <input type="file" class="gui-file" name="file2" id="file2" onchange="document.getElementById('uploader2').value = this.value;">
+                            <input type="text" class="gui-input" id="uploader2" placeholder="no file selected" readonly="">
+                            <label class="field-icon"><i class="fa fa-upload"></i></label>
+                        </label>
+ <label>Earliest date your tickets can be delivered</label>
+ <label class="field prepend-icon">
+                            	<input type="text" id="deliverydate" name="deliverydate" class="gui-input">
+                                <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+                            </label>
+	</div>
+			</div>
+				</div>
+                   <hr>
+				   <div class="row">
+			<div class="col-md-7 col-sm-7">
+			<div class="disclosures">
+				<h4>Disclosures <small>(Check all the following that apply)</small></h4>
+			
+				
+
+	<div class="btn-group event-icons">
+	<a href="#" class="btn-border active"><i class="fa fa-times"></i>None</a><a href="#" class="btn-border"><i class="fa fa-ticket"></i>Aisle Tickets</a><a href="#" class="btn-border"><i class="fa fa-eye-slash"></i>Partial View</a><a href="#" class="btn-border"><i class="fa fa-glass"></i>
+Alcohol Free</a><a href="#" class="btn-border"><i class="fa fa-ellipsis-h"></i>
+<select>
+    <option>Others</option>
+    <option>Wheelchair</option>
+	 <option>Side stage</option>
+	  <option>Rear stage/view</option>
+
+</select></a>
+			
+</div>
+	
+						
+			</div>
+			</div>
+			<div class="col-md-5 col-sm-5">
+				<div class="section">
+                    	<label class="field prepend-icon">
+                        	<textarea class="gui-textarea" id="comment" name="comment" placeholder="Additional Notes (Optional)"></textarea>
+                            <label for="comment" class="field-icon"><i class="fa fa-comments"></i></label>
+                           
+                        </label>
+                    </div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-md-9">
+			
+          <div class="error-info danger">
+            <strong><i class="fa fa-times-circle"></i></strong> Number of Tickets and Seats do not match!
+          </div>
+           <div class="error-info danger">
+            <strong><i class="fa fa-times-circle"></i></strong> Uploaded PDF (No. of pages) and Number of tickets do not match!
+          </div>
+			</div>
+			<div class="col-md-3">
+			<div class="text-right">
+	 <a class="button btn-blue" href="#" data-toggle="modal" 
+   data-target="#messageModal">Continue</a>
+	 </div>
+			</div>
+			</div>
+			
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                 <a href="seller-list-tickets.html"><h4 class="panel-title">
+                  <i class="fa fa-shopping-cart"></i> Sell Options
+                </h4></a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse twogrid-panel">
+                <div class="panel-body">
+				<div class="seller-sell-options">
+                   <div class="row">
+				   <div class="col-md-6 no-padding">
+				   <h2 class="admin-title">Your Sell now options</h2>
+				   <div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding">		
+<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Total
+							</div>
+							</div>
+							</div>
+							<div class="tkt-lists">
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$180
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$360
+							</div>
+							<div class="col-md-2 col-sm-3 col-xs-3">
+							<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                        </label>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$175
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$350
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                        </label>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding">		
+4
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$150
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$600
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                        </label>
+							
+							</div>
+							</div>
+						
+							</div>
+						<div class="text-right m10">
+							<a href="#" class="button btn-border">Sell Now</a>
+							</div>
+							
+							
+							</div>
+				   </div>
+				    <div class="col-md-6 no-padding brdr-left">
+				   <h2 class="admin-title">Similar Priced tickets</h2>
+				   <div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+&nbsp;
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">		
+Seating
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							
+							<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							</div>
+							</div>
+							<div class="tkt-lists">
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+					
+							
+							
+							</div>
+				   </div>
+				   </div>
+				   </div>
+				   
+				   <div class="tkts-note text-center">
+				   <div class="row">
+				   <div class="col-md-offset-6 col-md-6">
+				   <p>Don't like the matching bids, You can list with your own price</p>
+							<a class="button btn-blue" href="seller-list-tickets.html">Name Your Price</a>
+				   </div>
+				   </div>
+							
+							</div>
+                </div>
+            </div>
+        </div>
+ 
+    </div>
+			</div>
+			</div>
+
+		
+			</div>
+			<div class="col-md-4 no-padding-left bg-grey1">
+				<br><br>
+				<div class="tkt-lists">
+							<div class="text-center">
+							<img src="images/logo.png" alt="Slicket">
+							<h5 class="notkts-txt">Enter your ticket details to view sell now options
+
+
+</h5>
+							</div>
+							
+							
+							
+							</div>
+			</div/>
+			</div>
+  		</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+
+		<!-- Message Popup -->
+<div class="modal fade blue-bg" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+			 <h4 class="modal-title">You are trying to list tickets for an event that has already occurred!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+			<div class="row">
+			<div class="col-md-3 text-center">
+			<img src="images/popup-img1.jpg" alt="">
+			</div>
+			<div class="col-md-9">
+			<h4>  You are now not permitted to list tickets for this event!  </h4>
+				<ul>
+				<li><i class="fa fa-check"></i> E-tickets can be listed up until event start time</li>
+				<li><i class="fa fa-check"></i> Physical tickets must be listed no later than 3 days prior to the event start time</li>
+				</ul>
+				<div class="text-right"><a href="#" class="button btn-blue btn inline-block-level" data-dismiss="modal">Close</a></div>
+			</div>
+			</div>
+                
+            </div>
+           
+    </div>
+  </div>
+</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.js"></script>
+<script>
+$(function() {
+				$("#deliverydate, #deliverydate1").datepicker({
+					defaultDate: "+1w",
+					changeMonth: false,
+					numberOfMonths: 1,
+					prevText: '<i class="fa fa-chevron-left"></i>',
+					nextText: '<i class="fa fa-chevron-right"></i>',	
+				});
+});			
+$('#help-splits, #help-seats').popover();
+
+</script>
+ <script type="text/javascript" src="js/other_libs.js"></script> 
+  
+
+</body>
+</html>

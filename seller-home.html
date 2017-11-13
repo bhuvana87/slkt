@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top">
+				
+								<a href="#" class="dropdown-toggle drpdwn-link" data-toggle="dropdown"><span class="fa fa-th"></span> Browse Events</a> 
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+	
+	</nav>  	 	
+<!-- ./Navbar -->
+	<div class="main-container">
+	<aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper">
+          	<div class="">
+			<div class="seller-home">
+			<div class="admin-banner">
+			<div class="search-form">
+
+<h1>Sell your tickets on Slicket</h1>
+<div class="form-cont">
+<div class="row">
+<div class="col-md-12">
+<div class="section search"><a href="seller-events.html">
+                                <label class="field append-icon">
+                                    <input type="search" name="s" id="s" class="gui-input" placeholder="Search for Events, Teams, Venue...">
+                                    <label for="s" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label></a>
+                            </div>
+							
+</div>
+
+</div>
+</div>
+</div>
+			</div>
+			
+			<div class="seller-steps container">
+			<div class="row">
+			<div class="col-md-3">
+			<div class="seller-step-item">
+			
+			<h3>STEP 1 </h3>
+			<i class="fa fa-ticket fa-3x"></i>
+			<p>After you've found your Event,
+Enter Ticket Details
+</p>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seller-step-item">
+			<h3>STEP 2</h3>
+			 <i class="fa fa-shopping-cart fa-3x"></i>
+			<p>Decide if you want to Sell Now (for the available Bids in the system)
+</p>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seller-step-item">
+			<h3>STEP 3</h3>
+			 <i class="fa fa-list fa-3x"></i>
+			<p>If not, List your tickets (and wait for buyer to buy)
+</p>
+			</div>
+			</div>
+			<div class="col-md-3">
+				<div class="seller-step-item">
+			<h3>STEP 4</h3>
+			<i class="fa fa-refresh fa-3x"></i>
+			<p>Negotiate your with any Buyer (in the Marketplace)
+</p>
+			</div>
+			</div>
+			</div>
+		
+			<h2 class="admin-title">FAQ</h2>
+			<div class="row">
+			<div class="col-md-6">
+			<div class="panel-group faq" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+          <span class="fa fa-plus"></span>
+        What is a listing?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+   <p>A listing is the total number of tickets I have for sale in a row, that are next to each other, in a section.</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+          <span class="fa fa-plus"></span>
+         How do I Sell Now?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+      <p>Upon entering your listing, bids that match your ticket details are displayed enabling you to select any bid(s) and sell now.
+Additionally, after your tickets have been listed, go to the "My Ticket Listings" or "Event" page and select any of your listings.  By highlighting your listing you will be able to view all the bids that match your tickets.  Select any bid(s) and follow the checkout process.  </p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+          <span class="fa fa-plus"></span>
+         How do I Negotiate?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+       <p>After your tickets have been listed you are encouraged to negotiate with any bidder that has published a bid.  Additionally, any user may send a negotiation to you and you may accept, counter negotiate or decline. </p>
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <span class="fa fa-plus"></span>
+Can I list my ticket as an Instant Download?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+     <p>Upon entering your listing you will be asked your ticket type and delivery method.  Your e-tickets may then be uploaded and displayed as an Instant Download for buyers.</p>
+	 <p>Additionally, if you prefer to upload after your tickets have been listed, go to the "My Ticket Listings" and select any of your listings.  By highlighting your listing you can then upload your tickets so they can be displayed as an Instant Download to buyers. </p>
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <span class="fa fa-plus"></span>
+        Must I sell my tickets to a bidder or negotiator?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+       <p>Absolutely not! We desire that you Stake Your Position.</p>
+	   <p>We created the only fair and efficient market for buyers and sellers to come together and negotiate a fair price.  If you don't like any buyers price you are not obligated to sell.  You are, however, obligated to sell at your listing price  </p>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<div class="col-md-6">
+			<div class="panel-group faq" id="accordion1">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+          <span class="fa fa-plus"></span>
+How do I Get Paid?        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus. In pulvinar lectus a est. Curabitur eget orci. Cras laoreet ligula. Etiam sit amet dolor. 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse7">
+          <span class="fa fa-plus"></span>
+       What is the Seller Guarantee?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">
+       Nullam turpis. Cras dapibus, orci rutrum adipiscing luctus, nisl magna tempus urna, id porttitor nunc arcu et mauris. Suspendisse id justo id nisi suscipit porttitor. Pellentesque aliquet, leo id vestibulum eleifend, magna sem iaculis risus, quis volutpat turpis quam in tortor.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse8">
+          <span class="fa fa-plus"></span>
+        Why do i need my credit card
+        </a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse9">
+          <span class="fa fa-plus"></span>
+      How do I Print shipping labels
+        </a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			</div>
+			
+			</div>
+</div>
+			<footer class="footer">
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="widget widget-about">
+                                    <h4 class="footer-title">About <strong>Slicket</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum dui a magna viverra dictum. Pellentesque habitant morbi. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+                                    <address>
+                                        <div><i class="fa fa-phone"></i>123 456 7890</div>
+                                        <div><i class="fa fa-envelope"></i> <a href="mailto:info@example.com">info@slicket.com</a></div>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Want to Know</h4>
+                                    <ul>
+                                        <li><a href="#">What is Slicket</a></li>
+										<li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Our Guarantee</a></li>
+                                        <li><a href="#">User Agreement</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Broker Registration</a></li>
+                                     <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+							    <div class="col-md-2 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Useful Links</h4>
+                                    <ul>
+                                        <li><a href="#">About Slicket</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">In News</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">Term of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-twitter">
+                                    <h4 class="footer-title">Recent Tweets</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">@slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">@Slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                    </ul>
+                                </div><br>
+                            </div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+              <div class="footer-info">
+			  <div class="container text-center">
+			  &copy; 2015 Slicket. All rights reserved.
+			  </div>
+			  </div>
+            </footer>
+			</div>
+		
+		</section><!-- /wrapper -->
+      </section>
+	</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+</body>
+</html>

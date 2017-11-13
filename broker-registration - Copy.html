@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+	  
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		   <a class="navbar-brand" href="index.html">Slicket</a>
+        </div>
+        <div class="navbar-inverse side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="">Sell Your Tickets</a></li>
+            <li><a href="#signupmodal" data-toggle="modal"><i class="fa fa-pencil"></i> Sign Up</a></li>
+              <li><a href="#loginmodal" data-toggle="modal"><i class="fa fa-user"></i> Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+
+<!-- content Section -->
+<!--
+<div class="inner-banner tickets">
+<div class="banner-overlay">
+sad
+
+</div>
+</div>
+-->
+<!-- Content Section -->
+<div class="inner-content grey-bg">
+
+<div class="broker-registration form-cont">
+<div class="container">
+<div class="row"> 
+			<div class="col-md-3 col-sm-6 col-xs-6">		
+				<div class="service text-center">
+					<span class="ico center-block"><i class="fa fa-ticket"></i></span>
+					<h4>Sell Now</h4>
+					<p>Don't list and wait for a buyer. Have greater control over inventory by negotiating or selling now</p>
+				</div>
+			</div>
+       
+			<div class="col-md-3 col-sm-6 col-xs-12">		
+				<div class="service text-center">
+					<span class="ico center-block"><i class="fa fa-shopping-cart"></i></span>
+					<h4>Bulk Upload</h4>
+					<p>One click to update fro mobile device or computer</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">		
+				<div class="service text-center">
+					<span class="ico center-block"><i class="fa fa-list"></i></span>
+					<h4>Low Fees</h4>
+					<p>Lowest fees in the industry</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">		
+				<div class="service text-center">
+					<span class="ico center-block"><i class="fa fa-refresh"></i></span>
+					<h4>Motivation Rewards</h4>
+					<p>Get Rewarded by completing a Bid or negotiation</p>
+				</div>
+			</div>
+			
+    </div>
+	<hr>
+	<div class="row">
+	<div class="col-md-6">
+	<div class="broker-reg-form">
+	<h3>Create an Account</h3>
+	<br>
+	<div class="row">
+	<div class="col-md-6">
+                                    
+	<div class="section">
+                               <label class="field prepend-icon">
+                                    <input type="text" name="firstname" class="gui-input" placeholder="First Name">
+                               <label for="firstname" class="field-icon"><i class="fa fa-user"></i></label>  
+                                </label>
+                            </div>
+	</div>
+	<div class="col-md-6">
+		<div class="section">
+                                <label class="field">
+                                    <input type="text" name="firstname" class="gui-input" placeholder="Last Name">
+                                </label>
+                            </div>
+	</div>
+	
+	</div>
+		<div class="row">
+	<div class="col-md-12">
+	<div class="section">  <label class="field prepend-icon">
+                               
+                                    <input type="email" name="email" class="gui-input" placeholder="Email">
+                                 <label for="email" class="field-icon"><i class="fa fa-envelope"></i></label>  
+                                </label>
+                            </div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-12">
+		<div class="section">
+                               <label class="field prepend-icon">
+                                    <input type="text" name="phone" class="gui-input" placeholder="Phone">
+                                 <label for="phone" class="field-icon"><i class="fa fa-phone"></i></label>  
+                                </label>
+                            </div>
+	</div>
+	
+	</div>
+	<div class="row">
+	<div class="col-md-12">
+	<div class="section">
+                                <label class="prepend-icon field">
+                                    <input type="text" name="businessname" class="gui-input" placeholder="Business Name">
+									  <label for="businessname" class="field-icon"><i class="fa fa-building-o"></i></label>  
+                                </label>
+                            </div>
+	</div>
+	</div>
+		<div class="row">
+	
+	
+	<div class="col-md-12">
+	<div class="section">
+                    	<label class="field prepend-icon">
+                        	<textarea class="gui-textarea" id="additional-notes" name="additional-notes" placeholder="Additional Notes"></textarea>
+                            <label for="additional-notes" class="field-icon"><i class="fa fa-comments"></i></label>
+                        
+                        </label>
+                    </div>
+	</div>
+	
+	</div>
+	<div class="row">
+	<div class="col-md-12">
+		<div class="text-right">
+                    <a class="button btn-border" href="broker-thankyou.html">Register Now</a>  
+                    </div>
+	</div>
+	</div>
+	</div>
+	</div>
+<div class="col-md-6">
+<h2 class="brkrreg-title">FAQ</h2>
+	<div class="panel-group faq" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <span class="fa fa-minus"></span>
+        How do I Bulk Upload Tickets?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue. Cras tellus.  
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          <span class="fa fa-plus"></span>
+          How Do I Sell Now?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+       Nullam turpis. Cras dapibus, orci rutrum adipiscing luctus, nisl magna tempus urna, id porttitor nunc arcu et mauris. Suspendisse id justo id nisi suscipit porttitor. Pellentesque aliquet, leo id vestibulum eleifend, magna sem iaculis risus, quis volutpat turpis quam in tortor.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          <span class="fa fa-plus"></span>
+          How do I Negotiate?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+          <span class="fa fa-plus"></span>
+          How do I get an Incentive Reward?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+          <span class="fa fa-plus"></span>
+          How do I receive a Motivation Reward?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+          <span class="fa fa-plus"></span>
+         How do I get Paid?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+       Etiam sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam tellus diam, volutpat a, laoreet vel, bibendum in, nibh. Donec elit lectus, pharetra quis, vulputate in, lobortis at, mi. Donec libero purus, pulvinar ac, congue id, iaculis ut, est.
+      </div>
+    </div>
+  </div>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+          <span class="fa fa-plus"></span>
+          How do I update Pricing?
+        </a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">
+       Nullam turpis. Cras dapibus, orci rutrum adipiscing luctus, nisl magna tempus urna, id porttitor nunc arcu et mauris. Suspendisse id justo id nisi suscipit porttitor. Pellentesque aliquet, leo id vestibulum eleifend, magna sem iaculis risus, quis volutpat turpis quam in tortor.
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+	</div>
+	</div>
+		
+</div>
+</div>
+</div>
+
+
+
+
+<footer class="footer">
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="widget widget-about">
+                                    <h4 class="footer-title">About <strong>Slicket</strong></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum dui a magna viverra dictum. Pellentesque habitant morbi. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.</p>
+                                    <address>
+                                        <div><i class="fa fa-phone"></i>123 456 7890</div>
+                                        <div><i class="fa fa-envelope"></i> <a href="mailto:info@example.com">info@slicket.com</a></div>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Want to Know</h4>
+                                    <ul>
+                                        <li><a href="#">What is Slicket</a></li>
+										<li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Our Guarantee</a></li>
+                                        <li><a href="#">User Agreement</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Broker Registration</a></li>
+                                     <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+							    <div class="col-md-2 col-sm-6">
+                                <div class="widget widget-categories">
+                                    <h4 class="footer-title">Useful Links</h4>
+									
+                                    <ul>
+                                        <li><a href="#">About Slicket</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">In News</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">Term of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div><br>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget widget-twitter">
+                                    <h4 class="footer-title">Recent Tweets</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="#">@slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">@Slicket</a> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet<a href="#">#2 hours ago</a>
+                                        </li>
+                                    </ul>
+                                </div><br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              <div class="footer-info">
+			  <div class="container text-center">
+			  &copy; 2015 Slicket. All rights reserved.
+			  </div>
+			  </div>
+            </footer>
+<!-- Image Modal1 -->
+<div class="fullwidth-modal modal fade" id="image-modal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+   <div class="row">
+		<div class="col-md-12">
+			<p class="img-caption">Caption Goes Here</p>
+			<img src="img/1.jpg" alt="">
+			
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Image Modal2 -->
+<div class="fullwidth-modal modal fade" id="image-modal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl"> </div>
+      </div>
+    </div>
+    <div class="container">
+   <div class="row">
+		<div class="col-md-12">
+			<p class="img-caption">Caption Goes Here</p>
+			<img src="img/11.jpg" alt="">
+			
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- jQuery Version 1.11.3 
+<script src="js/jquery-1.11.3.min.js"></script> --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+</body>
+</html>

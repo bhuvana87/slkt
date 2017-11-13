@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet"> 
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</nav>  	 		 		
+<!-- ./Navbar -->
+	<div class="main-container">
+	 <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper container full-width">
+		  
+          	<div class="row">
+			<div class="col-md-8">
+  		<div class="venue-map">
+  		<div class="event-title">
+		<div class="row">
+			<div class="col-xs-10">
+			<div class="event-item-date">
+		
+			<div class="event-date">
+			22 Jul
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV</span></div>
+			</div>
+			</div>
+			<div class="col-xs-2 text-right">
+			<a href="#" data-target="#filters" data-toggle="modal" class="filter-icn  filter-hidden" title="Filters"><i class="fa fa-filter"></i></a>
+			</div>
+			</div>
+  		</div>
+	<div class="stadium-map">
+
+		<div id="navigationMenu">
+<div class="list-item btn-disabled">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">Reset</a>
+
+</div>
+</div>
+</div>
+
+<div class="list-item">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">
+<i class="fa fa-plus"></i>
+<i class="fa fa-minus"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>2</strong>Tickets
+</div>
+ <div class="list-links link-tkts">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="1">1</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="2">2</a>
+    					<a class="btn btn-primary btn-sm  active" data-toggle="list-tkt" data-title="3">3</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="4">4</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="5">5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="6">6</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="7">7</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="8">8</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tkt" data-title="8+">8+</a>
+						
+    				</div>
+    				<input type="hidden" name="list-tkt" id="list-tkt">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>1*</strong>Section
+</div>
+ <div class="list-links link-sec">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+						<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="Any">Any</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="1*">1*</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="2*">2*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="3*">3*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="4*">4*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="5*">5*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="6*">6*</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="list-sec" data-title="7*">7*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="8*">8*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="9*">9*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-sec" data-title="10*">10*</a>
+    				</div>
+    				<input type="hidden" name="list-sec" id="list-sec">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont">
+<strong>1-5</strong>Rows
+</div>
+ <div class="list-links link-rows">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm active" data-toggle="list-rows" data-title="1-5">1-5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="5-10">5-10</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-rows" data-title="10-15">10-15</a>
+    				
+    				</div>
+    				<input type="hidden" name="list-rows" id="list-rows">
+    			</div>
+ </div>
+</div>
+</div>
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>Instant</strong>Ticket
+</div>
+ <div class="list-links">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					 <a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Instant">Instant</a>
+						<a class="btn btn-primary btn-sm active" data-toggle="list-tktyp" data-title="E-Ticket">E-Ticket</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="list-tktyp" data-title="Physical">Physical</a>
+    					
+    				
+    				</div>
+    				<input type="hidden" name="list-tktyp" id="list-tktyp">
+    			</div>
+ </div>
+</div>
+</div>
+<!--<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>E-</strong>Tickets
+</div>
+ <div class="list-links">
+	<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="list-etkt" data-title="E-Ticket">Yes</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="list-etkt" data-title="Instant">No</a>
+    </div>
+    				<input type="hidden" name="list-etkt" id="list-etkt">
+    			</div>
+ </div>
+</div>
+</div>-->
+<div class="list-item">
+<div class="list-item-cont">
+<div class="link-cont small-txt">
+<strong>$200</strong><strong>- 300</strong> Pricing
+</div>
+ <div class="list-links price-range">
+	 <div class="form-cont wrap-2 slider-topspace">
+	 <div class="section">
+                               	
+                            <div class="slider-wrapper blue-slider">
+                                <div id="slider-range2"></div>  
+                            </div>
+                        </div>
+						</div>
+						</div>
+
+</div>
+</div>
+<div class="list-item btn-enabled">
+<div class="list-item-cont">
+<div class="p3">
+<a href="#">Filter</a>
+
+</div>
+</div>
+</div>
+</div> </div>
+			<div class="text-center">   <img src="images/map.jpg" alt="Venue Map"></div>
+			   
+			</div>
+			</div>
+			<div class="col-md-4 no-padding bg-grey1">
+			<div class="tabbable-panel tab-listings">
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="#tickets" data-toggle="tab">
+							50 Tickets
+							<span>(Starting $200)</span>
+							</a>
+						</li>
+						<li>
+							<a href="#bids" data-toggle="tab">
+							4 Bids
+							<span>($180 Onwards)</span>
+							
+							</a>
+						</li>
+						<li class="active">
+							<a href="#deals" data-toggle="tab">
+								My Pit
+							<span>(4 Slick Deals)</span>
+							</a>
+						</li>
+					</ul>
+						<div class="tab-content"  id="left">
+						<div class="tab-pane" id="tickets">
+						<div class="tkts-note text-center">
+							<p>Did not find What you are looking for, Negotiate on Individual Tickets or</p>
+							<a class="button btn-blue" href="#">Create Your own Bid</a>
+							</div>
+						<div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button> Filter and view available market tickets for this event ...</div>
+						<div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+						<i class="fa fa-bars"></i>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							Seating
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							</div>
+							</div>
+							<div id="inner">
+						<div  class="tkt-lists">
+					
+						
+								<div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+                            
+                            <div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+</div>
+						</div>
+						</div>
+						<div class="tab-pane" id="bids">
+							<div class="tkts-note text-center">
+							<p>Check the bids in the system and create your own winning bid</p>
+							<a class="button btn-blue" href="#">Create Your own Bid</a>
+							</div>
+						<div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button> Matching bids in the system. You can create your own...</div>
+						<div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+						<i class="fa fa-bars"></i>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							Seating
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							</div>
+							</div>
+							<div id="inner">
+						<div  class="tkt-lists">
+					
+						
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$180
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* or 4* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 114, 115, 116, 124, 125 or 126
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Any 3* Section
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 114
+							<span>Row 17 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+								<div class="tkt-list-item" >
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 114
+							<span>Any Row <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+</div>
+						</div>
+						</div>
+						
+   <div class="tab-pane active" id="deals">
+							<div class="tkts-note text-center">
+							<p>You can click on the deal and Buy Now or Negotiate Further</p>
+							
+							</div> 
+						<div class="alert alert-warning alert-dismissible fade in" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button> All of  your pending deals (Counter Negotiations and Bid Responses) in one Place.</div>
+						<div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+						<i class="fa fa-bars"></i>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							Seating
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							</div>
+							</div>
+							<div id="inner">
+						<div class="tkt-lists">
+							<div class="tkt-list-item tkt-list-item-space" onclick="location.href='ticket-details.html'">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 114
+							<span>Row 17 <small>(Physical)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$210
+							<div class="top-subtxt"><strike>$250</strike></div>
+							</div>
+							
+							</div>
+									<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							
+							</div>
+							<div class="col-md-10 col-sm-10 col-xs-10">
+							<div class="btm-subtxt">Counter Negotiation against $200; 2h ago</div>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item tkt-list-item-space">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 116
+							<span>Row 20 <small>(Instant)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$220
+							</div>
+								
+							</div>
+						<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							
+							</div>
+							<div class="col-md-10 col-sm-10 col-xs-10">
+							<div class="btm-subtxt">Bid Response for $200; 1d 4h ago</div>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item tkt-list-item-space paddingb50">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 115
+							<span>Row 19 <small>(E-Ticket)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$240
+							</div>
+								
+							</div>
+						<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							
+							</div>
+							<div class="col-md-10 col-sm-10 col-xs-10">
+							<div class="btm-subtxt">Bid Response for $200 </br>3* Section; Any Row; Any Type; 2 Tickets </div>
+                            <div class="btm-subtxt"></div>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item tkt-list-item-space special">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+							<div class="seating-det">
+							Section 114
+							<span>Row 17 <small>(Physical)</small></span>
+							</div>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$210
+							<!--<div class="top-subtxt"><strike>$220 </strike></div>-->
+                            <div class="top-subtxt"><strike>$300 (Listed)</strike></div>
+							</div>
+							
+							</div>
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-2">
+							
+							</div>
+							<div class="col-md-10 col-sm-10 col-xs-10">
+							<div class="btm-subtxt">Special Deal expires today</div>
+							</div>
+							</div>
+							</div>
+							
+							
+							</div>
+						</div>
+						</div>
+</div></div>
+</div>
+			</div/>
+			</div>
+			</div>
+  		</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+		<div id="filters" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+ <div class="modal-header grey-bg">
+ <h3 class="modal-title">Refine Tickets <a class="pull-right button" href="#" data-dismiss="modal"><i class="fa fa-times-circle"></i></a></h3>
+ </div>
+      <div class="modal-body">
+	  
+		<h5 for="tickets" class="black-txt">Tickets</h5>
+		<div class="input-group">
+    				<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="1">1</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="2">2</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="tickets" data-title="3">3</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="4">4</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="5">5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="6">6</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="7">7</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="8">8</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tickets" data-title="8+">8+</a>
+    				</div>
+    				<input type="hidden" name="tickets" id="tickets" value="3">
+    			</div>
+    				
+    		</div><br>
+    		<h5 for="section" class="black-txt">Section</h5>
+    			<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="1*">1*</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="2*">2*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="3*">3*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="4*">4*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="5*">5*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="6*">6*</a>
+    					<a class="btn btn-primary btn-sm active" data-toggle="section" data-title="7*">7*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="8*">8*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="9*">9*</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="section" data-title="10*">10*</a>
+    				</div>
+    				<input type="hidden" name="section" id="section">
+    			</div>
+	  
+	  <br>
+	    		<h5 for="rows" class="black-txt">Rows</h5>
+    		
+    					<div class="input-group">
+    				<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="Any">Any</a>
+                        <a class="btn btn-primary btn-sm active" data-toggle="rows" data-title="1-5">1-5</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="5-10">5-10</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="rows" data-title="10-15">10-15</a>
+    				
+    				</div>
+    				<input type="hidden" name="fun" id="fun">
+    			</div>
+                       
+    				
+    			 <br>
+	    		<h5 for="tkt-type" class="black-txt">Ticket Type</h5>
+    		
+    					<div class="input-group">
+    			<div id="radioBtn" class="btn-group">
+    					<a class="btn btn-primary btn-sm active" data-toggle="tkt-type" data-title="E-Ticket">E-Ticket</a>
+                        <a class="btn btn-primary btn-sm notActive" data-toggle="tkt-type" data-title="Instant">Instant</a>
+    					<a class="btn btn-primary btn-sm notActive" data-toggle="tkt-type" data-title="Physical">Physical</a>
+    					
+    				
+    				</div>
+    				<input type="hidden" name="tkt-type" id="tkt-type">
+    			</div>
+                       
+    				
+	  <br>
+    		
+		<div class="price-range">
+		
+	 <div class="form-cont  wrap-2">
+       
+                <h5 class="black-txt"><label for="amountx">Price Range</label>  <input type="text" id="amountx" class="slider-input"></h5>
+                 <br>
+				 <div class="section">
+                           <!-- end .spacer -->            	
+                            <div class="slider-wrapper blue-slider">
+                                <div id="slider-range3"></div>  
+                            </div><!-- end .slider-wrapper -->
+                        </div><!-- end section -->
+             <!-- end .form-body section -->
+         
+            
+        </div>
+		</div>
+	<br>
+		<div class="text-center">
+		<a href="#" class="button btn inline-block-level" data-dismiss="modal">Refine</a>
+		</div>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+		
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+// JavaScript Document
+$(document).ready(function($) {
+		//Menu animation						
+		$('#navList ul').css({display: "none"}); //Fix Opera
+  		
+		$('#navList li').hover(function() {  
+		$(this).find('a').stop().animate({'width' : "90"});
+   		$(this).find('ul:first').css({visibility : "visible", display : "none"}).show(400);
+    
+  		}, function() {
+    		$(this).find('ul:first').css({visibility : "hidden"}).hide(400);
+   			$(this).find('a').stop().animate({'width' : "80"});
+			});
+		});
+</script>
+<script type="text/javascript">
+	
+		$(function() {
+		
+			
+				
+				$("#amount").val( 
+					"$" + $("#slider2").slider("value") 
+				);
+				
+		
+		
+            var valtooltip = function(sliderObj, ui){
+                val1            = '<span class="slider-tip">'+ sliderObj.slider("values", 0) +'</span>';
+                val2            = '<span class="slider-tip">'+ sliderObj.slider("values", 1) +'</span>';
+                sliderObj.find('.ui-slider-handle:first').html(val1);
+                sliderObj.find('.ui-slider-handle:last').html(val2);		                 
+            };
+
+            $( "#slider-range2" ).slider({
+              range: true,
+              min: 0,
+              max: 500,
+              values: [180, 400],              
+			  create:function(event,ui){
+					valtooltip($(this),ui);                    
+              },
+              slide: function( event, ui ) {
+					valtooltip($(this),ui);
+					$( "#amountx" ).val("$" + ui.values[0] + " - $" + ui.values[1]); 
+              }, 
+              stop:function(event,ui){
+					valtooltip($(this),ui);             
+              }			               
+
+            });
+			
+			$( "#amountx" ).val("$" + $("#slider-range2").slider("values", 0) + " - $" + $("#slider-range2").slider("values", 1));
+			
+			var initialSpark = 60;
+			var sparkTooltip = function(event, ui) {
+				var curSpark = ui.value  || initialSpark
+				var sparktip = '<span class="slider-tip">' + curSpark + '</span>';
+				$(this).find('.ui-slider-handle').html(sparktip);
+			}			
+			
+			
+		});				
+    
+    </script>
+	<script type="text/javascript">
+	
+		$(function() {
+		
+			
+				
+				$("#amount").val( 
+					"$" + $("#slider3").slider("value") 
+				);
+				
+		
+		
+            var valtooltip = function(sliderObj, ui){
+                val1            = '<span class="slider-tip">'+ sliderObj.slider("values", 0) +'</span>';
+                val2            = '<span class="slider-tip">'+ sliderObj.slider("values", 1) +'</span>';
+                sliderObj.find('.ui-slider-handle:first').html(val1);
+                sliderObj.find('.ui-slider-handle:last').html(val2);		                 
+            };
+
+            $( "#slider-range3" ).slider({
+              range: true,
+              min: 0,
+              max: 500,
+              values: [180, 400],              
+			  create:function(event,ui){
+					valtooltip($(this),ui);                    
+              },
+              slide: function( event, ui ) {
+					valtooltip($(this),ui);
+					$( "#amountx" ).val("$" + ui.values[0] + " - $" + ui.values[1]); 
+              }, 
+              stop:function(event,ui){
+					valtooltip($(this),ui);             
+              }			               
+
+            });
+			
+			$( "#amountx" ).val("$" + $("#slider-range3").slider("values", 0) + " - $" + $("#slider-range2").slider("values", 1));
+			
+			var initialSpark = 60;
+			var sparkTooltip = function(event, ui) {
+				var curSpark = ui.value  || initialSpark
+				var sparktip = '<span class="slider-tip">' + curSpark + '</span>';
+				$(this).find('.ui-slider-handle').html(sparktip);
+			}			
+			
+			
+		});				
+    $('#radioBtn a').on('click', function(){
+    var sel = $(this).data('title');
+    var tog = $(this).data('toggle');
+    $('#'+tog).prop('value', sel);
+    
+    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+})
+    </script>
+	<script>
+window.onload = window.onresize = function () {
+    var left = document.getElementById("left");
+    var height = window.innerHeight;
+    left.style.height = height-110 + "px";
+}
+
+</script>
+<script type="text/javascript" src="js/other_libs.js"></script> 
+
+
+	
+	</script>
+
+</body>
+</html>

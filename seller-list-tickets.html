@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Slicket</title>
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<link href="css/other.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<!-- Navbar -->
+<nav class="navbar navbar-fullwidth navbar-default">
+    <div class="container">
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="glyphicon glyphicon-option-vertical"></span>
+			
+			</button> <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+			<a class="navbar-brand" href="index.html">
+				Slicket
+			</a>
+		</div>
+
+		<div class="collapse navbar-collapse form-cont" id="admin-nav">      
+			<form class="navbar-form navbar-left" method="GET" role="search">
+				<div class="search-top input-pnl">
+				<label class="field append-icon">
+                                    <input type="search" name="Search" id="Search" class="gui-input" placeholder="Search">
+                                    <label for="Search" class="field-icon"><i class="fa fa-search"></i></label>  
+                                </label>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-th"></span></a>
+				<ul class="dropdown-menu mega-dropdown-menu row">
+					<li class="col-sm-4">
+						<ul class="right-dvdr">
+							
+                            <li class="active"><a href="#">NBA</a></li>
+							<li><a href="#">NFL</a></li>
+							<li><a href="#">NHL</a></li>
+							<li><a href="#">NCAA BB</a></li>
+							<li><a href="#">NCAA FB</a></li>
+                            
+                          <li><a href="#">Music</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							<li><a href="#">Team 6</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-4">
+						<ul>
+							
+							<li><a href="#">Team 1</a></li>
+							<li><a href="#">Team 2</a></li>
+							<li><a href="#">Team 3</a></li>
+							<li><a href="#">Team 4</a></li>
+							<li><a href="#">Team 5</a></li>
+							
+							
+							<li><a href="#" class="btn btn-blue">More</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+			</li>
+		</ul>
+								</div>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				
+				<li>
+					<a href="#"><i class="fa fa-fw fa-bell"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-fw fa-envelope"></i><span class="badge bg-light-green">3</span></a>
+				</li>
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-user"></i> Welcome Username!
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	</nav>  	 			
+<!-- ./Navbar -->
+	<div class="main-container">
+	 <aside>
+          <div id="sidebar"  class="nav-collapse">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	
+              	 
+              	    <li class="img-profile"><img src="images/prfl-img.jpg" alt="User Name"></li>
+					<li><a href="dashboard.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+					<li><a href="seller-index.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-plus"></span> Add Listings</a></li>
+					<li><a href="seller-mylistings.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-user"></span> My Listings</a></li>
+					<li><a href="seller-sales.html" class="button btn-lightgrey"><span class="fa fa-line-chart"></span> My Sales</a></li>
+					<li><a href="seller-purchase.html" class="button btn-lightgrey"><span class="glyphicon glyphicon-shopping-cart"></span> My Purchase</a></li>
+					<li><a href="seller-settings.html" class="button btn-lightgrey"><span class="fa fa-cog"></span> Settings</a></li>
+<li class="active"><a href="seller-notifications.html" class="button btn-lightgrey"><span class="fa fa-bell"></span> Notifications</a></li>
+
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+	   <section id="main-content">
+          <section class="wrapper container">
+		  
+          	<div class="row">
+			<div class="col-md-8 main-content form-cont brdr-right">
+		
+			<div class="venue-map">
+				<div class="event-item-date">
+			<a href="seller-events.html" id="back-link" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Back to My Listing" data-original-title="" title=""><i class="fa fa-chevron-left"></i></a>
+			<div class="event-date">
+			22 Jul
+			<span>Fri 7:00 PM</span>
+			</div>
+			<div class="event-name">
+			Event Name Goes Here...
+			<span>Mandalay Bay Event Center, Las Vegas, NV</span></div>
+			<hr>
+			</div>
+				<div class="seller-form">
+<div class="panel-group" id="accordion">
+       <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="seller-sell-options.html"><h4 class="panel-title">
+                    <i class="fa fa-ticket"></i> Enter Ticket Details
+                </h4></a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+				<div class="row">
+				<div class="col-md-6">
+				<div class="preferred-seating-cont">
+	 <div class="row">
+	 <div class="col-md-6">
+	 <label>Category / Sec</label>
+	 <select class="selectpicker">
+	 <option>Section 11</option>
+	 <option>Section 13</option>
+	 <option>Section 16</option>
+	 <option>Section 19</option>
+	 </select>
+	 </div>
+	  <div class="col-md-6">
+	  <label>Rows</label>
+	 <select class="selectpicker">
+	 <option>Row 2</option>
+	 <option>Row 5</option>
+	 <option>Row 8</option>
+	 <option>Row 9</option>
+	 </select>
+	 </div>
+	 </div>
+			</div>
+				</div>
+				<div class="col-md-6">
+				<div class="nof-tkts">
+			<div class="row">
+			<div class="col-md-6">
+			<h4>Number of Tickets</h4>
+			</div>
+			<div class="col-md-6">
+			<div class="negotiate">
+			<a href="#"><i class="fa fa-minus"></i></a> <span>2</span> <a href="#"><i class="fa fa-plus"></i> </a>
+			</div>
+			</div>
+  		</div>
+  	</div>
+	<div class="splits">
+			<div class="row">
+			<div class="col-md-2">
+			<h4>Splits</h4>
+			</div>
+			<div class="col-md-10">
+			<div class="splits-item">
+			<a href="#">1</a><a href="#">2</a><a href="#" class="active">3</a><a href="#">4</a><a href="#" class="active">5</a>
+			</div>
+			
+			</div>
+			<div class="col-md-12">
+				<label class="field option block">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> Dont Leave me with a single ticket
+                        </label>
+			</div>
+  		</div>
+	
+  	</div>
+				</div>
+				</div>
+                   <hr>
+				   <div class="row">
+			<div class="col-md-7">
+			<div class="disclosures">
+				<h4>Disclosures <small>(Check all the following that apply)</small></h4>
+			
+				
+
+	<div class="btn-group event-icons">
+ 	<a href="#" class="btn-primary"><i class="fa fa-ticket"></i>Aisle Tickets</a>
+			<a href="#" class="btn-primary"><i class="fa fa-line-chart"></i>Partial View</a>
+			<a href="#" class="btn-primary"><i class="fa fa-desktop"></i>Alcohol Free</a>
+			<a href="#" class="btn-primary"><i class="fa fa-times"></i>None</a>
+</div>
+	
+							<div class="section">
+                    	<label class="field prepend-icon">
+                        	<textarea class="gui-textarea" id="comment" name="comment" placeholder="Additional Notes (Optional)"></textarea>
+                            <label for="comment" class="field-icon"><i class="fa fa-comments"></i></label>
+                           
+                        </label>
+                    </div>
+			</div>
+			</div>
+			<div class="col-md-5">
+			<div class="delivery">
+	<h4>Delivery Method</h4>
+	
+	 <select class="selectpicker">
+	 <option>E-Ticket</option>
+	 <option>Option 2</option>
+	 <option>Option 3</option>
+	 </select>
+	 	  <label>The earliest date your tickets can be delivered</label>
+ <label class="field prepend-icon">
+                            	<input type="text" id="deliverydate" name="deliverydate" class="gui-input">
+                                <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+                            </label>
+
+	</div>
+			</div>
+			</div>
+			
+			<div class="text-right">
+	 <a class="button btn-blue" href="#" data-toggle="modal" 
+   data-target="#messageModal">View Sell Options</a>
+	 </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><h4 class="panel-title">
+                  <i class="fa fa-shopping-cart"></i> Sell Options
+                </h4></a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in twogrid-panel">
+                <div class="panel-body">
+				<div class="seller-sell-options">
+				<div id="outer-wrap">
+<div id="inner">
+
+   <div class="row">
+				   <div class="col-md-6 no-padding">
+				   <h2 class="admin-title">Your Sell now options</h2>
+				  <h5 class="notkts-txt">No Bid options found...</h5>
+				   <div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Total
+							</div>
+							</div>
+							</div>
+							
+							
+							
+							<div class="tkt-lists">
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$180
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$360
+							</div>
+							<div class="col-md-2 col-sm-3 col-xs-3">
+						<a class="button btn-border disabled" href="#">In&nbsp;Cart</a>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$175
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$350
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							<a class="button btn-border" href="#">Sell&nbsp;Now</a>
+							</div>
+							</div>
+							</div>
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+4
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$150
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$600
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+						<a class="button btn-border" href="#">Sell&nbsp;Now</a>
+							
+							</div>
+							</div>
+						
+							</div>
+					
+							
+							</div>
+				   </div>
+				    <div class="col-md-6 no-padding brdr-left">
+				   <h2 class="admin-title">Similar Priced tickets</h2>
+				    <h5 class="notkts-txt">No Bid priced tickets found...</h5>
+				   <div class="tkt-list-head">
+							<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-1 no-padding-left">		
+&nbsp;
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">		
+Seating
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">
+							
+							<!-- Dropdown Trigger -->
+<select class="selectpicker">
+    <option>Qty</option>
+    <option>1</option>
+    <option>2</option>
+</select>
+  <!-- Dropdown Structure -->
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							Price
+							</div>
+							</div>
+							</div>
+							<div class="tkt-lists">
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-1 no-padding-left">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-1 no-padding-left">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-1 no-padding-left">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+							
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-2 col-sm-2 col-xs-1 no-padding-left">
+							<span class="count">2</span>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="seating-det">
+							Section 115
+							<span>Row 20</span>
+							</div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 no-padding text-center">		
+2
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$200
+							</div>
+							</div>
+							</div>
+					
+							
+							
+							</div>
+				   </div>
+				   </div>
+</div>
+</div>
+<div class="tkts-note offer-price">
+				   <div class="row">
+				   <div class="col-md-5">
+				   
+				    <div class="row">
+				  <div class="col-md-6 no-padding-left">
+				   <h5 class="black-txt"><label>Selling Price</label> </h5>
+				   <label class="field">
+                            	<input type="text" class="gui-input" placeholder="$180">
+                            </label>
+				  </div>
+				   <div class="col-md-6 no-padding-left">
+				    <h5 class="black-txt"><label>Display Price</label> </h5>
+				  <label class="field">
+                            	<input type="text" class="gui-input" placeholder="$200">
+                            </label>
+				  </div>
+				  </div>
+				   <div class="row">
+				   <div class="col-md-12 no-padding-left">
+				   <label class="field option block mtb10">
+                            <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                   Add a higher display price  <a href="#" class="smart-link"><i class="fa fa-question-circle"></i></a>                
+                        </label>
+				   </div>
+				 
+				   </div>
+				   <label>Use the slider or enter the price you want for your 4 remaining tickets</label>
+				   
+				   </div>
+				   <div class="col-md-7">
+				       <div class="section mt60">
+                                	
+                            <div class="slider-wrapper blue-slider">
+                                <div id="slider-range2"></div>  
+                            </div>
+                        </div>
+						 
+				    <div class="row">
+				   <div class="col-md-6 col-sm-6">
+				     <label>Valid Till</label>
+						 <label class="field prepend-icon">
+                            	<input type="text" id="deliverydate1" name="deliverydate1" class="gui-input">
+                                <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+                            </label>
+						
+				   </div>
+				   <div class="col-md-6 text-right">
+				 <br>
+				<!--<a href="#" class="button btn-blue block-level">Checkout</a>-->
+						
+				   </div>
+				   </div>
+				   </div>
+				   </div>
+				  
+				
+                </div>   
+                
+				   </div>
+				   
+				   
+            </div>
+        </div>
+ 
+    </div>
+			</div>
+			</div>
+</div>
+		
+			</div>
+			<div class="col-md-4 no-padding-left bg-grey1">
+			<div class="name-price form-cont">
+<div class="tkt-list-item">
+Total tickets for sale 	<span class="tkt-tot-count">2</span>
+			
+				</div>
+				<p>You are selling 4 tickets now</p>
+					<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$150
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$600
+							</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 text-right">
+							<a href="#"><i class="fa fa-times-circle"></i></a>
+							</div>
+							</div>
+						
+							</div>
+								<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+2
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$150
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$600
+							</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 text-right">
+						<a href="#"><i class="fa fa-times-circle"></i></a>
+							</div>
+							</div>
+						
+							</div>
+							<p>You are listing 3 tickets</p>
+							<div class="tkt-list-item">
+								<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3">		
+3
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$180
+							</div>
+							
+							<div class="col-md-3 col-sm-3 col-xs-3">
+							$360
+							</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 text-right">
+							<a href="#"><i class="fa fa-times-circle"></i></a>
+							</div>
+							</div>
+						
+							</div>
+							<h5>Credit Card</h5>
+							<p>Why do we need your credit card details <i class="fa fa-question-circle"></i></p>
+							<div class="preferred-seating-cont ">
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+							<div class="section mb10">
+							     <label class="field append-icon">
+                                    <input type="text" name="card" id="card" class="gui-input" placeholder="Valid Card Number">
+                                    <label for="card" class="field-icon"><i class="fa fa-credit-card"></i></label>  
+                                </label>
+								</div>
+							</div>
+							
+							</div>
+						
+							<div class="row">
+							<div class="col-md-3 col-sm-4 no-padding-right">
+							<div class="section mb10">
+							     <label class="field">
+                                    <input type="text" name="cvv" id="cvv" class="gui-input" placeholder="CVV">
+                                </label>
+								</div>
+							</div>
+							<div class="col-md-9 col-sm-8">
+							<label class="field append-icon">
+	<input type="text" class="gui-input"  value="" id="datetimepicker" class="input-block-level" placeholder="mm/yyyy" onfocus="this.placeholder = ''" onblur="this.placeholder = 'mm/yyyy'"><label for="price" class="field-icon"><span class="glyphicon glyphicon-th-large"></span></label>  
+	</label>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-md-6 col-sm-6 no-padding-right">
+							<div class="section mb0">
+							     <label class="field append-icon">
+                                    <input type="text" name="cardholdername" id="cardholdername" class="gui-input" placeholder="Name">
+                                    <label for="cardholdername" class="field-icon"><i class="fa fa-user"></i></label>  
+                                </label>
+								</div>
+							</div>
+														<div class="col-md-6 col-sm-6 ">
+							<div class="section mb0">
+							     <label class="field append-icon">
+                                    <input type="text" name="zip" id="zip" class="gui-input" placeholder="Zip">
+                                    <label for="zip" class="field-icon"><i class="fa fa-map-marker"></i></label>  
+                                </label>
+								</div>
+							</div>
+							</div>
+						</div>
+							<br>
+						
+						<div class="section mb10">
+						<div class="row">
+						<div class="col-md-1 col-sm-1 col-xs-1 no-padding-right">
+						<label class="field option block mb0">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                        </label>
+						</div>
+						<div class="col-md-11 col-sm-11 col-xs-11">
+						<small> I Guarantee to offer similar or Better Priced tickets in case of unavailability  </small>
+						</div>
+						</div>
+						</div>
+						<div class="section mb0">
+							<div class="row">
+						<div class="col-md-1 col-sm-1 col-xs-1 no-padding-right">
+						<label class="field option block mb0">
+                        <input type="checkbox" name="terms"><span class="checkbox"></span> 
+                        </label>
+						</div>
+						<div class="col-md-11 col-sm-11 col-xs-11">
+						<small> Agree to Terms and Conditions   </small>
+						</div>
+						</div>
+						</div>
+					
+						<div class="text-right">
+							
+						<a href="#messageModal" data-toggle="modal"  class="button btn-blue">List & Sell Now</a>
+						</div>
+				</div>
+			</div/>
+			</div>
+  		</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+		<!-- Message Popup -->
+<div class="modal fade blue-bg" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+			  <h4 class="modal-title">Update Listing</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>You're attempting to update your listing details.</p>
+				<p>If you proceed, your negotiations will automatically cancel.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="button btn-blue btn inline-block-level" data-dismiss="modal">Proceed</a>
+			 <a href="#" class="button btn-danger btn inline-block-level" data-dismiss="modal">Cancel</a>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery Version 1.11.3 --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.js"></script>
+ <script type="text/javascript">
+	
+		$(function() {
+				$("#deliverydate, #deliverydate1").datepicker({
+					defaultDate: "+1w",
+					changeMonth: false,
+					numberOfMonths: 1,
+					prevText: '<i class="fa fa-chevron-left"></i>',
+					nextText: '<i class="fa fa-chevron-right"></i>',			
+				
+				});
+		});				
+    
+		$(function() {
+				$("#amount").val( 
+					"$" + $("#slider2").slider("value") 
+				);
+            var valtooltip = function(sliderObj, ui){
+                val1            = '<span class="slider-tip">'+ sliderObj.slider("values", 0) +'</span>';
+                val2            = '<span class="slider-tip">'+ sliderObj.slider("values", 1) +'</span>';
+                sliderObj.find('.ui-slider-handle:first').html(val1);
+                sliderObj.find('.ui-slider-handle:last').html(val2);		                 
+            };
+
+            $( "#slider-range2" ).slider({
+              range: true,
+              min: 0,
+              max: 400,
+              values: [180, 200],              
+			  create:function(event,ui){
+					valtooltip($(this),ui);                    
+              },
+              slide: function( event, ui ) {
+					valtooltip($(this),ui);
+					$( "#amountx" ).val("$" + ui.values[0] + " - $" + ui.values[1]); 
+              }, 
+              stop:function(event,ui){
+					valtooltip($(this),ui);             
+              }			               
+
+            });
+			
+			$( "#amountx" ).val("$" + $("#slider-range2").slider("values", 0) + " - $" + $("#slider-range2").slider("values", 1));
+			
+			var initialSpark = 60;
+			var sparkTooltip = function(event, ui) {
+				var curSpark = ui.value  || initialSpark
+				var sparktip = '<span class="slider-tip">' + curSpark + '</span>';
+				$(this).find('.ui-slider-handle').html(sparktip);
+			}	
+		});			
+    </script>
+	<script>
+	window.onload = window.onresize = function () {
+    var left = document.getElementById("outer-wrap");
+    var height = window.innerHeight;
+    left.style.height = height-280 + "px";
+}
+	</script>
+ <script type="text/javascript" src="js/other_libs.js"></script> 
+		
+</body>
+</html>
